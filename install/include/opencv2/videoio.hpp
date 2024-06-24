@@ -852,6 +852,7 @@ public:
      */
     CV_WRAP virtual void release();
 
+    CV_WRAP virtual void saveMatricesToFile(const std::string& filename, int numFrames); // Appended by Manan Gupta
     /** @brief Grabs the next frame from video file or capturing device.
 
     @return `true` (non-zero) in the case of success.
