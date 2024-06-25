@@ -1,23 +1,28 @@
+
 # OpenCV-C++
 
+This project demonstrates how to use OpenCV with C++ to capture video from a USB camera. The code in `first.cpp` showcases basic video capture operations using OpenCV.
 
-OpenCV Version 4.9.0(latest) complied using MSVC compiler instead of GCC.
-This project demonstrates how to use OpenCV with C++ to capture video from a USB camera. The code in first.cpp showcases basic video capture operations using OpenCV.
+**OpenCV Version:** 4.10.0-dev (latest), compiled using the MSVC compiler instead of GCC.
 
-*********************************************************************************************************************************************************************
+---
 
-Currently, this project consists of a new module that is not present in the official opencv 4.x ver, and is developed by me
+## New Module
 
-## How to use 
+This project includes a custom module developed by me that is not present in the official OpenCV 4.10.0-dev(4.x) version.
 
--> Replace cap.cpp & videoio.hpp from this repo to your forked opencv with cap.cpp & video.hpp in modules/videoio/src and modules/videoio/include/opencv2
+## How to Use
 
--> After doing so, use opencv.sln in visual studio to build the neccesary executables required to run the code
+1. Replace `cap.cpp` and `videoio.hpp` from this repository with the corresponding files in your forked OpenCV:
+   - `cap.cpp` in `modules/videoio/src`
+   - `videoio.hpp` in `modules/videoio/include/opencv2`
 
-![image](https://github.com/manan152003/OpenCV-CPP/assets/99275086/95f259f1-b392-46f3-ac30-893a8fe664a2)
+2. Open `opencv.sln` in Visual Studio and build the necessary executables required to run the code.
 
-![image](https://github.com/manan152003/OpenCV-CPP/assets/99275086/d01945c4-ceff-407d-b421-605d9b5a12ed)
+   ![image](https://github.com/manan152003/OpenCV-CPP/assets/99275086/95f259f1-b392-46f3-ac30-893a8fe664a2)
 
--> Thus, on building you will be able to use this module 'saveMatricesToFile' which allow you to save the matrices of image or videostream directly in a file, with metadeta of that image.
+   ![image](https://github.com/manan152003/OpenCV-CPP/assets/99275086/d01945c4-ceff-407d-b421-605d9b5a12ed)
 
--> Use Project1 or first.cpp, if you need any help in doing so
+3. After building, you will be able to use the new module `saveMatricesToFile`, which allows you to save the matrices of images or video streams directly to a file, along with metadata.
+
+4. Refer to `Project1` or `first.cpp` if you need any help using the module.
